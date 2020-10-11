@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".RoutineActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/routine_sunBtn"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="Sun"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_back"/>
+
+
+            <Button
+                android:id="@+id/routine_monBtn"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="Mon"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_back"/>
+
+
+            <Button
+                android:id="@+id/routine_tueBtn"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="Tue"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_back"/>
+
+
+            <Button
+                android:id="@+id/routine_wedBtn"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="Wed"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_back"/>
+
+
+            <Button
+                android:id="@+id/routine_thusSunBtn"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="Thus"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_back"/>
+
+
+            <Button
+                android:id="@+id/routine_friBtn"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="Fri"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_back"/>
+
+
+            <Button
+                android:id="@+id/routine_satBtn"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="Sat"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_back"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/routine_subRecy"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

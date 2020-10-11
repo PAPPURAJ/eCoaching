@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "773599530691",
+    "firebase_url": "https://online-class-reminder-e4bf0.firebaseio.com",
+    "project_id": "online-class-reminder-e4bf0",
+    "storage_bucket": "online-class-reminder-e4bf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773599530691:android:87d1ec2b262cd0e2ba1c76",
+        "android_client_info": {
+          "package_name": "com.blogspot.rajbtc.onlineclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773599530691-gtbd1jq402j674dn2n04oabtm80gb8e7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfyef5A6krzDuDuaAurshKTfDX8h5rQ2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773599530691-gtbd1jq402j674dn2n04oabtm80gb8e7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
