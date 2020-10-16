@@ -1,9 +1,12 @@
 package com.blogspot.rajbtc.onlineclass.dataclass;
 
-public class ClassData {
-    private String docID,className,day,teacher,startTime,lastUpdate,duration,link;
+import com.google.firebase.database.DatabaseReference;
 
-    public ClassData(String docID,String className,String day, String teacher, String startTime, String lastUpdate, String duration, String link) {
+public class ClassData {
+    private DatabaseReference docID;
+    private  String className,day,teacher,startTime,lastUpdate,duration,link;
+
+    public ClassData(DatabaseReference docID,String className,String day, String teacher, String startTime, String lastUpdate, String duration, String link) {
         this.docID=docID;
         this.className = className;
         this.day=day;
@@ -14,7 +17,7 @@ public class ClassData {
         this.link = link;
     }
 
-    public String getDocID() {
+    public DatabaseReference getDocID() {
         return docID;
     }
 
@@ -45,4 +48,5 @@ public class ClassData {
     public String getLink() {
         return link;
     }
+
 }

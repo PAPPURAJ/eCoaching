@@ -44,7 +44,7 @@ public class FirebaseMani {
                 ArrayList<ClassData> dataArrayList=new ArrayList<>();
                 for(QueryDocumentSnapshot qn:queryDocumentSnapshots){
                     if(qn.getString("Day").toLowerCase().equals(searchDay.toLowerCase())){
-                        dataArrayList.add(new ClassData(qn.getId(),qn.getString("ClassName"),qn.getString("Day"),qn.getString("Teacher"),qn.getString("StartTime"),qn.getString("LastUpdate"),qn.getString("Duration"),qn.getString("Link")));
+                       // dataArrayList.add(new ClassData(qn.getId(),qn.getString("ClassName"),qn.getString("Day"),qn.getString("Teacher"),qn.getString("StartTime"),qn.getString("LastUpdate"),qn.getString("Duration"),qn.getString("Link")));
                     }
                 }
                 recyclerView.setAdapter(new ClassUserAdapter(context,dataArrayList));

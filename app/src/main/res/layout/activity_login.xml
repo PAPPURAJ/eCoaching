@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".LoginActivity">
+    android:background="@drawable/signup_login_back"
+    tools:context=".LoginActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="429dp"
+        android:background="@drawable/signup_frame"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
 
     <EditText
         android:id="@+id/loginEmailEt"
@@ -19,18 +27,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
         android:hint="Password"/>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
         android:onClick="loginClick"
-        android:text="Login"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Not an account? Sign up"
-        android:gravity="right"
-        android:onClick="createAccountClick"
-        android:textColor="#ff0000"/>
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/login_btn"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:onClick="createAccountClick"
+            android:text="New here? Sign up"
+            android:textColor="#ff0000" />
+
+    </LinearLayout>
 </LinearLayout>

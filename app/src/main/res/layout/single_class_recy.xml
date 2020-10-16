@@ -9,6 +9,7 @@
         android:layout_width="0dp"
         android:layout_weight="2"
         android:gravity="center"
+        android:textStyle="bold"
         android:layout_height="match_parent"
         android:text="9:00PM-1 hour"/>
 
@@ -20,36 +21,43 @@
         android:layout_margin="10dp"
         android:layout_height="match_parent">
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
+            android:gravity="right"
             android:layout_margin="10dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/single_class_recy_subTv"
                     android:layout_width="match_parent"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:text="Data Structure"/>
 
                 <TextView
                     android:id="@+id/single_class_recy_teacherTv"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="AbduL Rouf"/>
 
             </LinearLayout>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/separate"/>
             <TextView
+                android:layout_marginRight="5dp"
                 android:id="@+id/single_class_recy_joinClassTv"
-                android:layout_width="match_parent"
+                android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Join Class"/>
